@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8CE2C75824DD8EF000E0F253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C75724DD8EF000E0F253 /* AppDelegate.swift */; };
 		8CE2C75A24DD8EF000E0F253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C75924DD8EF000E0F253 /* SceneDelegate.swift */; };
-		8CE2C75C24DD8EF000E0F253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C75B24DD8EF000E0F253 /* ViewController.swift */; };
-		8CE2C75F24DD8EF000E0F253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2C75D24DD8EF000E0F253 /* Main.storyboard */; };
 		8CE2C76124DD8EF000E0F253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2C76024DD8EF000E0F253 /* Assets.xcassets */; };
 		8CE2C76424DD8EF000E0F253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2C76224DD8EF000E0F253 /* LaunchScreen.storyboard */; };
 		8CE2C76F24DD8EF100E0F253 /* GenericFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C76E24DD8EF100E0F253 /* GenericFormTests.swift */; };
@@ -20,6 +18,8 @@
 		8CE2C78C24DD902C00E0F253 /* String+GenericForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C78B24DD902C00E0F253 /* String+GenericForm.swift */; };
 		8CE2C78E24DD907700E0F253 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C78D24DD907700E0F253 /* FormTextField.swift */; };
 		8CE2C79124DD923900E0F253 /* UIColor+GenericForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C79024DD923900E0F253 /* UIColor+GenericForm.swift */; };
+		8CE2C79424DD988400E0F253 /* CreateAccountFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C79224DD988400E0F253 /* CreateAccountFormViewController.swift */; };
+		8CE2C79524DD988400E0F253 /* CreateAccountFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2C79324DD988400E0F253 /* CreateAccountFormViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,6 @@
 		8CE2C75424DD8EF000E0F253 /* GenericForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE2C75724DD8EF000E0F253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE2C75924DD8EF000E0F253 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CE2C75B24DD8EF000E0F253 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CE2C75E24DD8EF000E0F253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CE2C76024DD8EF000E0F253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE2C76324DD8EF000E0F253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE2C76524DD8EF000E0F253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +57,8 @@
 		8CE2C78B24DD902C00E0F253 /* String+GenericForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GenericForm.swift"; sourceTree = "<group>"; };
 		8CE2C78D24DD907700E0F253 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		8CE2C79024DD923900E0F253 /* UIColor+GenericForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+GenericForm.swift"; sourceTree = "<group>"; };
+		8CE2C79224DD988400E0F253 /* CreateAccountFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountFormViewController.swift; sourceTree = "<group>"; };
+		8CE2C79324DD988400E0F253 /* CreateAccountFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountFormViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +112,13 @@
 				8CE2C78F24DD922500E0F253 /* Utils */,
 				8CE2C75724DD8EF000E0F253 /* AppDelegate.swift */,
 				8CE2C75924DD8EF000E0F253 /* SceneDelegate.swift */,
-				8CE2C75B24DD8EF000E0F253 /* ViewController.swift */,
-				8CE2C75D24DD8EF000E0F253 /* Main.storyboard */,
 				8CE2C76024DD8EF000E0F253 /* Assets.xcassets */,
 				8CE2C76224DD8EF000E0F253 /* LaunchScreen.storyboard */,
 				8CE2C76524DD8EF000E0F253 /* Info.plist */,
 				8CE2C78724DD8F2000E0F253 /* Validators.swift */,
 				8CE2C78D24DD907700E0F253 /* FormTextField.swift */,
+				8CE2C79224DD988400E0F253 /* CreateAccountFormViewController.swift */,
+				8CE2C79324DD988400E0F253 /* CreateAccountFormViewController.xib */,
 			);
 			path = GenericForm;
 			sourceTree = "<group>";
@@ -255,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE2C79524DD988400E0F253 /* CreateAccountFormViewController.xib in Resources */,
 				8CE2C76424DD8EF000E0F253 /* LaunchScreen.storyboard in Resources */,
 				8CE2C76124DD8EF000E0F253 /* Assets.xcassets in Resources */,
-				8CE2C75F24DD8EF000E0F253 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +284,9 @@
 			files = (
 				8CE2C78A24DD8F5900E0F253 /* NSRegularExpression+GenericForm.swift in Sources */,
 				8CE2C78824DD8F2000E0F253 /* Validators.swift in Sources */,
+				8CE2C79424DD988400E0F253 /* CreateAccountFormViewController.swift in Sources */,
 				8CE2C78C24DD902C00E0F253 /* String+GenericForm.swift in Sources */,
 				8CE2C78E24DD907700E0F253 /* FormTextField.swift in Sources */,
-				8CE2C75C24DD8EF000E0F253 /* ViewController.swift in Sources */,
 				8CE2C79124DD923900E0F253 /* UIColor+GenericForm.swift in Sources */,
 				8CE2C75824DD8EF000E0F253 /* AppDelegate.swift in Sources */,
 				8CE2C75A24DD8EF000E0F253 /* SceneDelegate.swift in Sources */,
@@ -325,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CE2C75D24DD8EF000E0F253 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CE2C75E24DD8EF000E0F253 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8CE2C76224DD8EF000E0F253 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
