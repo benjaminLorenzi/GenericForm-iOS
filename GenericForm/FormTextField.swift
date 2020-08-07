@@ -48,6 +48,7 @@ extension FormTextField: TextFieldValidatorAdaptble {
 class FormTextField: UIView {
     var validators: [Validators] = []
     fileprivate let baseHeight: Int = 35
+    var stateFullMode: Bool = false
     
     weak var formDelegate: FormTextFieldProtocol?
     fileprivate var didEndTypingTimer: Timer?
@@ -142,7 +143,9 @@ extension FormTextField {
     @objc func textFieldDidChange(textField: UITextField) {
         didEndTypingTimer?.invalidate()
         didEndTypingTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(didEndTyping), userInfo: nil, repeats: false)
-        self.performValidation()
+        if stateFullMode {
+            self.performValidation()
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(200)) {
             if let delegate = self.formDelegate, self.window != nil {
                 delegate.formTextViewDidChange?(self)
@@ -152,14 +155,18 @@ extension FormTextField {
     
     @objc func formTextFieldDidEndEditing(_ textField: UITextField) {
         self.textField.resignFirstResponder()
-        self.performValidation()
+        if stateFullMode {
+            self.performValidation()
+        }
         if let delegate = formDelegate, self.window != nil {
             delegate.formTextFieldDidEndTyping(self)
         }
     }
     
     @objc func formTextFieldDidBeginEditing(_ textField: UITextField) {
-        self.performValidation()
+        if stateFullMode {
+            self.performValidation()
+        }
     }
 }
 
@@ -184,7 +191,7 @@ private extension FormTextField {
         self.textField.addTarget(self, action: #selector(formTextFieldDidBeginEditing(_:)), for: .editingDidBegin)
         
         textField.borderStyle = .none
-        textField.font = UIFont(name: "BentonSans", size: 14.0)
+        textField.font = UIFont.systemFont(ofSize: 14, weight: .medium)
         textField.textColor = UIColor.TextColor()
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -236,8 +243,8 @@ private extension FormTextField {
 
 // MARK: Stack view used for messages
 public class FormFieldValidationView: UIStackView {
-    
-    var font: UIFont = UIFont(name: "BentonSans", size: 12)!
+
+    var font: UIFont = UIFont.systemFont(ofSize: 12, weight: .medium)
     var color: UIColor = UIColor.TextFieldDefaultColor() {
         didSet {
             self.arrangedSubviews.forEach { ($0 as! UILabel).textColor = color }

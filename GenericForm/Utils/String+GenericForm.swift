@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 extension String {
     
     func getPasswordValidationErrors() -> [String] {
