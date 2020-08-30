@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CDBF95F24FC0D5B00FD397D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8CDBF95E24FC0D5B00FD397D /* README.md */; };
+		8CDBF96124FC152100FD397D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CDBF96024FC152100FD397D /* Localizable.strings */; };
 		8CE2C75824DD8EF000E0F253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C75724DD8EF000E0F253 /* AppDelegate.swift */; };
 		8CE2C75A24DD8EF000E0F253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2C75924DD8EF000E0F253 /* SceneDelegate.swift */; };
 		8CE2C76124DD8EF000E0F253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2C76024DD8EF000E0F253 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8CDBF95E24FC0D5B00FD397D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8CDBF96024FC152100FD397D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8CE2C75424DD8EF000E0F253 /* GenericForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE2C75724DD8EF000E0F253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE2C75924DD8EF000E0F253 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 		8CE2C74B24DD8EF000E0F253 = {
 			isa = PBXGroup;
 			children = (
+				8CDBF96024FC152100FD397D /* Localizable.strings */,
+				8CDBF95E24FC0D5B00FD397D /* README.md */,
 				8CE2C75624DD8EF000E0F253 /* GenericForm */,
 				8CE2C76D24DD8EF100E0F253 /* GenericFormTests */,
 				8CE2C77824DD8EF100E0F253 /* GenericFormUITests */,
@@ -255,8 +261,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDBF96124FC152100FD397D /* Localizable.strings in Resources */,
 				8CE2C79524DD988400E0F253 /* CreateAccountFormViewController.xib in Resources */,
 				8CE2C76424DD8EF000E0F253 /* LaunchScreen.storyboard in Resources */,
+				8CDBF95F24FC0D5B00FD397D /* README.md in Resources */,
 				8CE2C76124DD8EF000E0F253 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

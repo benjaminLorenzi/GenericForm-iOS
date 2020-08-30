@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  GenericForm
+
+  Created by Benjamin LORENZI on 30/08/2020.
+  Copyright © 2020 Benjamin LORENZI. All rights reserved.
+*/
+"field_empty_error" = "This field should not be empty";
+"email_format_invalid_error" = "Invalid email format";
+"mobile_number_invalid" = "Invalid phone number";
+"specials_characters" = "Use at least one special character and no spaces";
+"password_has_wrong_length" = "Password must be 8–20 characters";
+"password_number_letter_suggestion" = "Use at least one number and one letter";
